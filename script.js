@@ -1,20 +1,27 @@
-$(document).ready(function(){
-    $('.autoplay').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 6000,
-        arrows: false,
-        centerMode: true,
-        centerPadding: '60px'
-      });
-    
-    
-    var now = new Date();
-    var target = now.getDay();
-    console.log(target);
-    if (target == 2) {
-        console.log("yay!")
-        $('.autoplay').slick('slickCurrentSlide');
-   }      
+window.onload = function onLoad() {
+  var circle = new ProgressBar.Circle('#progress', {
+      color: '#555',
+      trailColor: '#eee',
+      strokeWidth: 10,
+      duration: 2500,
+      easing: 'easeInOut'
   });
+
+  circle.set(0.05);
+
+  setTimeout(function() {
+      circle.animate(0.3);
+  }, 1000);
+
+  setTimeout(function() {
+      circle.animate(0.4);
+  }, 3500);
+
+  setTimeout(function() {
+      circle.animate(0.8);
+  }, 5500);
+
+  setTimeout(function() {
+      circle.animate(1);
+  }, 8000);
+};
