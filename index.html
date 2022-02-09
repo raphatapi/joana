@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Eu te amo!</title>
+    <link rel="shortcut icon" type="image/jpg" href="./rose.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./flipdown.css">
+    <script src="./flipdown.js"></script>
 </head>
 <body>
-    <div class="progress" id="progress"></div>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.js" integrity="sha512-1H+cM+oeza0TJglvGWQHdb6cW2gS2ptQE9s0wV24+OaTmr60hZdRgGDqfuEzlbrb7NyOHCsY21Y4/AoKFwmiug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <!-- The video -->
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="./love.mp4" type="video/mp4">
+    </video> -->
+    <div class="content">
+        <div id="header">
+            <h2>Amor da minha vida!</h2>
+            <h1>❤️Me sinto completo com voce!❤️</h1>
+        </div>
+        <div id="clock">
+            <div id="flipdown" class="flipdown"></div>
+        </div>
+        <div id="player">
+            <!-- <audio id="audio" src="./06 All of Me.m4a" controls autoplay></audio> -->
+            <iframe src="https://open.spotify.com/embed/track/6NK9sI0Lnsiwn6I0MbWWxn?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div> 
+    </div>
+    
+    
+    
+    <script>
+        var flipdown = new FlipDown(1645632000);
+        flipdown.start();
+        flipdown.ifEnded(() => {
+            console.log('The countdown has ended!');
+        });
+        // var flipdown = new FlipDown(datetime, el, {
+        //     theme: 'light' // or dark
+        // });
+    </script>
 </body>
 </html>
