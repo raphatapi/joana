@@ -7,8 +7,8 @@
     <title>Joaninha</title>
     <link rel="shortcut icon" type="image/jpg" href="./pngwing.com.png">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./flipdown.css">
-    <script src="./flipdown.js"></script>
+    <!-- <link rel="stylesheet" href="./flipdown.css"> -->
+    <!-- <script src="./flipdown.js"></script> -->
 </head>
 <body>
     <!-- The video -->
@@ -17,26 +17,24 @@
     </video> -->
     <div class="content">
         <div id="header">
-            <img src="./pngwing.com.png" height="60" width="40"><h2>20 SEMANAS!</h2>
+            <img src="./pngwing.com.png" height="60" width="40"><h2>JOANA</h2>
             <h1>❤️Já comecei a mexer na barriga da mamãe❤️</h1>
         </div>
-        <div id="clock">
-            <div id="flipdown" class="flipdown"></div>
+        <div id="wrapper">
+            <div id="clock"></div>
         </div>
         <div id="player">
         
         </div> 
     </div>
     
-    
-    
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="./jquery.countdown.js"></script>
     <script>
-        new FlipDown(1656684000, {
-            theme: "dark",
-        }).start();
-        flipdown.ifEnded(() => {
-            console.log('The countdown has ended!');
+        $('#wrapper').countdown('2022/07/01', function(event) {
+            $('#clock').html(event.strftime('%w semanas e %d dias'));
         });
     </script>
+    
 </body>
 </html>
