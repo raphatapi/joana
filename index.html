@@ -17,7 +17,7 @@
     </video> -->
     <div class="content">
         <div id="header">
-            <h2>20 SEMANAS!</h2>
+            <img src="./pngwing.com.png" height="60" width="40"><h2>20 SEMANAS!</h2>
             <h1>❤️Já comecei a mexer na barriga da mamãe❤️</h1>
         </div>
         <div id="clock">
@@ -31,14 +31,12 @@
     
     
     <script>
-        var flipdown = new FlipDown(1656684000);
-        flipdown.start();
+        new FlipDown(1656684000, {
+            theme: "dark",
+        }).start();
         flipdown.ifEnded(() => {
             console.log('The countdown has ended!');
         });
-        // var flipdown = new FlipDown(datetime, el, {
-        //     theme: 'light' // or dark
-        // });
     </script>
 </body>
 </html>
