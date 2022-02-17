@@ -5,7 +5,7 @@ html {
 }
 
 body { 
-    background: url(./Grapefruit-33d2f51.jpg) no-repeat center center fixed; 
+    background: url(./carrot.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -70,7 +70,7 @@ h2 {
     align-content: center;
     height: 20vh;
     color: whitesmoke;
-    /* color: rgb(87, 36, 105); */
+    /* color: rgb(37, 107, 238); */
     background-color: rgba(189, 215, 216, 0.288);
     font-size: 300%;
     font-weight: bold;
