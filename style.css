@@ -108,6 +108,7 @@ h2 {
     #clock {
         font-size: 200%;
         font-weight: bolder;
+        text-align: center;
     }
 
 }
@@ -129,7 +130,7 @@ h2 {
     }
 
     #clock {
-        font-size: 50px;
+        font-size: 180%;
     }
 
 }
